@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section, article, aside {
+    width: 80%;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+section#articles, section#projects, section#ascii, section#quote, aside {
+    margin: 20px auto;
+    text-align: center;
+}
+
+section#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-photo {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.about-content p {
+    flex-grow: 1;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+pre {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+pre, code {
+    background-color: #272822;
+    color: #f8f8f2;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+section#projects ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#projects li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+footer {
+    background-color: #333;
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer section#contacts {
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer p {
+    margin: 15px;
+}
+
+@media (max-width: 768px) {
+    section, article, aside {
+        width: 95%;
+    }
+}
