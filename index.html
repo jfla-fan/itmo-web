@@ -7,6 +7,7 @@
     <meta name="author" content="Демидович Эдуард Максимович">
     <title>Мой блог о программировании</title>
     <link rel="stylesheet" href="outlines.css">
+    <script src="js/page-load-stats.js" defer></script>
 </head>
 <body>
 
@@ -17,13 +18,15 @@
             <li><a href="#about">Обо мне</a></li>
             <li><a href="#articles">Статьи</a></li>
             <li><a href="#projects">Проекты</a></li>
+            <li><a href="#gallery">Галерея</a></li>
             <li><a href="#contacts">Контакты</a></li>
+            <li><a href="pages/faq.html">FAQ</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
-    <section id="about">
+    <section id="about" class="linkable">
         <h2>Обо мне</h2>
         <div class="about-content">
             <img src="assets/JFlaFan.jpg" alt="Фото Эдуарда" class="about-photo">
@@ -31,7 +34,7 @@
         </div>
     </section>
 
-    <section id="articles">
+    <section id="articles" class="linkable">
         <h2>Мои статьи</h2>
         <article>
             <h3>Заголовок статьи 1</h3>
@@ -45,7 +48,7 @@
         </article>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="linkable">
         <h2>Мои проекты</h2>
         <ul>
             <li>Проект 1</li>
@@ -53,6 +56,48 @@
             <li>Проект 3</li>
         </ul>
     </section>
+
+    <section id="languages">
+        <h2>Languages</h2>
+        <div class="languages-table">
+            <div class="table-header">Язык</div>
+            <div class="table-header">Основная область</div>
+            <div class="table-header">Технологии</div>
+            <div class="table-header">Опыт</div>
+    
+            <div class="table-row">C++</div>
+            <div class="table-row">Backend, graphics programming</div>
+            <div class="table-row">Qt, userver, Boost, SDL</div>
+            <div class="table-row">3 года</div>
+    
+            <div class="table-row">JavaScript</div>
+            <div class="table-row">Веб-разработка</div>
+            <div class="table-row">JS, ...</div>
+            <div class="table-row">Пол-года</div>
+    
+            <div class="table-row">Python</div>
+            <div class="table-row">Тестирование, ML</div>
+            <div class="table-row">Selenium, Sklearn, ...</div>
+            <div class="table-row">Пол-года</div>
+    
+            <div class="table-row">C#</div>
+            <div class="table-row">Backend</div>
+            <div class="table-row">...</div>
+            <div class="table-row">...</div>
+        </div>
+    </section>    
+
+    <section id="gallery" class="linkable">
+        <h2>Галерея</h2>
+        <div class="gallery-grid">
+            <img src="assets/JFlaFan.jpg" alt="Image 1" class="gallery-item">
+            <img src="assets/JFlaFan.jpg" alt="Image 2" class="gallery-item">
+            <img src="assets/JFlaFan.jpg" alt="Image 3" class="gallery-item">
+            <img src="assets/JFlaFan.jpg" alt="Image 4" class="gallery-item">
+            <img src="assets/JFlaFan.jpg" alt="Image 5" class="gallery-item">
+            <img src="assets/JFlaFan.jpg" alt="Image 6" class="gallery-item">
+        </div>
+    </section>    
 
     <aside>
         <h2>Совет дня</h2>
@@ -89,7 +134,7 @@ for (let i = 0; i < 10; i++) {
 </main>
 
 <footer>
-    <section id="contacts">
+    <section id="contacts" class="linkable">
         <h2>Контакты</h2>
         <p>Свяжитесь со мной по email: <a href="mailto:edwarddem1346@gmail.com">edwarddem1346@gmail.com</a></p>
     </section>
