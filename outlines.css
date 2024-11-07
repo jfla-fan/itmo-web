@@ -264,7 +264,6 @@ section#gallery {
 
 aside {
     align-self: center;
-    max-width: 800px;
 }
 
 aside p q {
@@ -326,5 +325,9 @@ footer p {
 
     aside {
         display: none;
+    }
+
+    section#quote {
+        display: none
     }
 }
