@@ -1,7 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 0;
     padding-top: 100px;
     background-color: #f0f0f0;
     color: #2c3e50;
@@ -68,7 +67,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-nav ul li a.active {
+nav ul li a.menu--active {
     background-color: #1abc9c;
     color: #e74c3c;
     pointer-events: none;
@@ -288,7 +287,6 @@ pre, code {
 
 footer {
     background-color: #34495e;
-    color: #ecf0f1;
     padding: 20px 0;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -298,13 +296,18 @@ footer {
 }
 
 footer section#contacts a {
-    color: #1abc9c;
+    color: #170606;
+    font-style: italic;
     text-decoration: none;
 }
 
 footer p {
     margin: 15px 0;
     font-size: 1em;
+}
+
+footer p#copyright {
+    color: #ecf0f1;
 }
 
 /* ----------------- MEDIA ----------------- */
